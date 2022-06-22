@@ -1,10 +1,10 @@
-import path from 'path';
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/main.js'),
+      entry: resolve(__dirname, 'src/main.ts'),
       name: 'evan-long',
       fileName: (format) => `evan-long.${format}.js`
     }
