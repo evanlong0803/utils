@@ -1,0 +1,21 @@
+{
+  "name": "evan-long",
+  "version": "1.0.0",
+  "description": "A GOOD DESCRIPTION",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/evan-long.umd.js",
+  "module": "./dist/evan-long.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/evan-long.es.js",
+      "require": "./dist/evan-long.umd.js"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9"
+  }
+}
