@@ -8,6 +8,9 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module">
+      import { add } from '.';
+      console.log(add(1, 2));
+    </script>
   </body>
 </html>

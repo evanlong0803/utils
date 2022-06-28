@@ -5,13 +5,16 @@
  * @returns {T[]} data - 扁平化的新数组
  */
 export const arrayFlat = <T>(
-  childName: string = 'children',
   target: T[],
-  data: T[] = []
+  data: T[] = [],
+  childName: string = 'children'
 ): T[] => {
   target.forEach((item: T & { [childName: string]: any }) => {
     item[childName].length && data.push(item);
-    item[childName] && arrayFlat(item[childName], data);
+    item[childName] && arrayFlat(item[childName], data, childName);
   });
-  return data;
+  return data.map((item: T & { [childName: string]: any }) => ({
+    ...item,
+    [childName]: undefined,
+  }));
 };

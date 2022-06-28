@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@evanlong/utils@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.npmjs.org/@evanlong/utils/-/utils-1.0.7.tgz#8759225a275767fcb9f313a1b001034b0f9c56c4"
+  integrity sha512-AggZKnel5hMaXLBuTsveHOiX/q8DFhqZNBQbXrnSS9W/8WtKxYd2akQwSRA2HPxuXkQf3b7Zv/XQ+9ln5oEmdg==
+
 "@microsoft/api-extractor-model@7.20.0":
   version "7.20.0"
   resolved "https://registry.npmmirror.com/@microsoft/api-extractor-model/-/api-extractor-model-7.20.0.tgz#96ac1593b43f99d965c24e23c79f02ddb7b45b2f"
