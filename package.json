@@ -1,6 +1,6 @@
 {
   "name": "@evanlong/utils",
-  "version": "1.0.12",
+  "version": "1.0.24",
   "description": "personal tool library",
   "author": "Evan Long",
   "license": "MIT",
@@ -31,8 +31,5 @@
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
     "vite-plugin-dts": "^1.2.0"
-  },
-  "dependencies": {
-    "@evanlong/utils": "^1.0.7"
   }
 }

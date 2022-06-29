@@ -2,13 +2,6 @@
 # yarn lockfile v1
 
 
-"@evanlong/utils@^1.0.7":
-  version "1.0.10"
-  resolved "https://registry.npmjs.org/@evanlong/utils/-/utils-1.0.10.tgz#dfe8159d5f6e47431e55540a95c32b1277e2ff3c"
-  integrity sha512-nDcpJtFwX1RCh9g2k5Mky3TBdYaOBm2ayS+3ryw/5HUDMV/et53c6ZjneOL/j2RNRAT70g8flFs+LHMp/84UNQ==
-  dependencies:
-    "@evanlong/utils" "^1.0.7"
-
 "@microsoft/api-extractor-model@7.20.3":
   version "7.20.3"
   resolved "https://registry.npmjs.org/@microsoft/api-extractor-model/-/api-extractor-model-7.20.3.tgz#193f3951f5867a925bacd14d9276185f8d8a945b"

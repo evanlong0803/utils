@@ -1,20 +1,17 @@
 /**
  * 数组递归扁平化
- * @param {array} target - 源数组
- * @param {string} childName - 子数组键名
- * @returns {T[]} data - 扁平化的新数组
+ * @param {Array} target - 源数组
+ * @param {String} childName - 子数组键名
+ * @returns data - 扁平化的新数组
  */
-export const arrayFlat = <T>(
-  target: T[],
-  data: T[] = [],
-  childName: string = 'children'
-): T[] => {
-  target.forEach((item: T & { [childName: string]: any }) => {
-    item[childName].length && data.push(item);
-    item[childName] && arrayFlat(item[childName], data, childName);
+export const arrayFlat = (
+  target: Array<any>,
+  childName: string = 'children',
+  data: Array<any> = []
+) => {
+  target.forEach((item) => {
+    Object.keys(item).length && data.push(item);
+    item[childName]?.length && arrayFlat(item[childName], childName, data);
   });
-  return data.map((item: T & { [childName: string]: any }) => ({
-    ...item,
-    [childName]: undefined,
-  }));
+  return data.map(({ [childName]: name, ...item }) => item);
 };
