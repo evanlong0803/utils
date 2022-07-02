@@ -1,15 +1,9 @@
 /**
  * 数组递归扁平化
  * @param {Array} target 源数组 - 必填
- * @param {String} childName 子数组键名，默认为children - 非必填
  * @param {Function} transform 回调函数，转换数据结构 - 非必填
+ * @param {String} childName 子数组键名，默认为children - 非必填
  * @returns data - 扁平化的新数组
- * @example
- * arrayFlat(data, 'children', ({ id, name }, index) => ({
- *   id,
- *   name: name + '-转换',
- *   index,
- * }));
  */
 export const arrayFlat = (
   target: any[],

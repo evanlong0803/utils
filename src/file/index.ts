@@ -1,7 +1,7 @@
 /**
  * 将base64转换为文件对象
- * @param {string} base64Data - base64
- * @param {string} filename - 文件名
+ * @param {String} base64Data - base64
+ * @param {String} filename - 文件名
  * @returns {File | Error} File - 扁平化的新数组
  */
 export const base64ToFile = (
